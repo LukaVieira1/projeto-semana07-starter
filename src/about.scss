@@ -1,0 +1,115 @@
+@import '_variables', '_styles';
+
+.about {
+  display: flex;
+  padding: 93px 16px 24px 16px;
+  color: white;
+  flex-direction: column;
+  max-width: 967px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 992px) {
+      flex-direction: row;
+  }
+
+  &-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      max-height: 365px;
+
+      @media (min-width: 992px) {
+          margin-right: 32px;
+          max-width: 326px;
+      }
+  }
+
+  &-title {
+      margin: 24px 0;
+      font-weight: normal;
+      font-size: 34px;
+      line-height: 40px;
+      @media (min-width: 992px) {
+          font-size: 48px;
+          line-height: 57px;
+          margin-top: 0;
+      }
+  }
+
+  &-description {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.44px;
+  }
+
+  &-email {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    color: $primaryColor;
+  }
+}
+
+.skills {
+  color: white;
+  padding: 0 15px 40px 15px;
+  &-title {
+    margin: 0 73.5px 32px 73.5px
+  }
+
+  &-card {
+    margin-bottom: 24px;
+    display: flex;
+    padding: 0 16px;
+    border-radius: 8px;
+    background-color: $colorRellenos;
+    flex-direction: column;
+    max-width: 354px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+    
+    &-icons {
+      margin-top: 24.33px;
+    }
+
+    &-title {
+      margin: 16.25px 0 10px 0;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        @media (min-width: 992px) {
+            font-size: 48px;
+            line-height: 57px;
+            margin-top: 0;
+        }
+    }
+
+    &-description {
+      margin: 0 0 16px 0;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.44px;
+    }
+}
+
+}
+
+
+
+// display: flex;
+// padding: 24px 0 16px 16px;
+// border-radius: 8px;
+// background-color: $colorRellenos;
+// color: white;
+// flex-direction: column;
+// max-width: 967px;
+// margin-left: auto;
+// margin-right: auto;
