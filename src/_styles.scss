@@ -22,6 +22,7 @@ button {
     right: 0;
     z-index: 999;
     background: $backgroundColor;
+    
     &-links {
         display: none;
     }
@@ -55,6 +56,38 @@ button {
     }
 }
 
+.hambMenu {
+    top: 60px;
+    position: absolute;
+
+    &-link {
+        color: white;
+        margin-right: 23px;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 8px 0;
+        position: relative;
+    }
+
+    &-ul{
+        margin-top: 28.5px;
+        list-style-type: none;
+
+        &-li {
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__hambFormat{
+             color: white;
+            margin-right: 23px;
+            font-weight: 500;
+            text-decoration: none;
+            padding: 8px 0;
+            position: relative;
+    }
+}
 
 .footer {
     padding: 0 16px;
@@ -126,6 +159,10 @@ button {
     align-items: center;
     cursor: pointer;
 
+    &__full-width {
+        width: 100%;
+    }
+
     &__solid {
         background-color: $primaryColor;
         padding-left: 15.5px;
@@ -168,3 +205,21 @@ button {
 .justify-between {
     justify-content: space-between;
 }
+
+.center-text {
+    justify-content: center;
+}
+
+ .hide{
+    display:none;
+ }
+ .show{
+    display:block;
+ }
+ 
+ .hide-svg{
+    display:none;
+ }
+ .show-svg{
+    display:block;
+ }
